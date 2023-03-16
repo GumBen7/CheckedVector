@@ -9,7 +9,7 @@
             public double X {set => _x = value; get => _x;}
             private double _y;
             public double Y {set => _y = value; get => _y;}
-            public double Length;
+            public double Length {get => Math.Sqrt(_x*_x+_y*_y);}
             ///<summary>
             ///Этот конструктор инициализирует новый вектор к (<paramref name="x"/>,<paramref name="y"/>).
             ///</summary> 
